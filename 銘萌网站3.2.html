@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1 "> -->
+        <title>銘萌网站</title>
+        <style>            /* style局部css部分 */
+            *{margin: 0; padding: 0;}    /* 内边距外边距为0 */
+            .tou{height: 30px;background: rgba(16, 104, 214, 0.3); padding-left: 30px; padding-right: 30px;position: relative;} /* 顶部分 左右两边边距****/
+            .wangzhang{float: left;position: relative;border-left: 2px solid #000000;border-right: 2px solid #000000;}/* position：relative相对定位，自己的初始位置 */
+            .time{float: right;padding-right: 40px;}
+            .mingcheng{float: left;position: relative;} .log{float: left;position: relative;} .sousuo{float: right;position: relative;}/* 顶部 float浮动函数 */
+            .bianju1{width: 20px;height: 20px;background: rgba(10, 10, 20, 0);float: left;padding-left: 50px;}
+            .gongneng{width: 250px; height: 700px;float:left;
+                border-left: 2px solid #000000;border-right: 2px solid #000000;
+                /* background-image: url(https://th.wallhaven.cc/small/zy/zyzp8v.jpg); */
+                background:rgba(255, 255, 255, 0.3);
+                background-repeat: no-repeat;background-size:250px 300px;
+                background-attachment: scroll; position: relative;}  /* attachment：fixed跟着滑动而动  */  
+                .gn1{color: snow;}    
+                .bianju2{width: 20px;height: 20px;background: rgba(10, 10, 20, 0);float: right;padding-right: 50px;}     
+            .NBJt{width: 150px; height: 600px;float: left;background:rgba(89, 15, 150, 0); padding-left: 10px;padding-right: 10px;}
+            .NBJt img{border: 2px solid #14a8c9; width: 150px;}
+            .Qita{width: 300px; height: 700px;float: left;background:rgba(255, 255, 255, 0.3);position: relative; border-left: 2px solid #000000;border-right: 2px solid #000000;margin-left: 15px;}
+            .Qitawang{width: 150px; height: 700px; position: relative; float: left;}
+            .gongneng2{width: 148px; height: 700px;float: left;position: relative;border-left: 2px solid #000000;}  /* border边框 */
+            .yingshi{width: 150px; height: 700px;background:rgba(255, 255, 255, 0.3);float: left;}
+            .Sucai{width: 170px; height: 700px;background:rgba(255, 255, 255, 0.3);float: left;border-left: 2px solid #000000;}
+            a{text-decoration: none;/* 把下划线去掉text-decoration: none */ color: white; } b{color:dodgerblue;}
+            body{
+                background-image:url(https://th.wallhaven.cc/small/zy/zygeko.jpg); /* 背景图片路径   */
+                 background-repeat: no-repeat; /*<!--repeat默认平铺，repeat-x：x轴平铺。repeat-y：y轴平铺。 --> */
+                /* background-position: center/left/right center/top/bottom ;10%10% 10px10px 对齐方式 */
+                background-size: cover;/* 1170px 700px布局中图片大小 ，cover一最大的形式展现多余的剪掉*/
+                background-attachment: fixed;   /* 视口同宽高，attachment跟size打配合 */   
+            }
+            .wei{ height: 70px; background: rgba(23, 89, 75, 0.5);}/* 尾部框架 */
+            .WZ{float: left;margin-left: 20px;} .WY{float: left;}
+            .WY samp{font-size: 15px;}
+            /* #beijing{width: 1170px;height: 700px;布局大小} */
+                body{ /* html随着窗口变化，内容而不变。 */
+                    margin:0px;
+                    width:1350px;
+                    min-width:1024px;
+                    max-width:100%;
+                    height:100%;
+                    background-color:#F0F0F0;
+                    } /* html随着窗口变化，内容而不变。 */
+                    #head{
+                    background-color:#FFFF00;
+                    width:1350px;
+                    height:100px;
+                    min-width:1024px;
+                    } /* html随着窗口变化，内容而不变。 */
+                    #center{
+                    background-color:#00FFFF;
+                    width:1350px;
+                    min-height:100%;
+                    position:relative;
+                    min-width:1024px;
+                    }
+                    #foot{
+                    background-color:#FF00FF;
+                    width:1350px;
+                    height:100px;
+                    min-width:1024px;
+                    }
+                    #left{
+                    width:150px;
+                    height:100%;
+                    background-color:#EEEEEE;
+                    position:absolute;
+                    margin-left:60px;
+                    }
+                    #main{
+                    width:924px;
+                    height:100%;
+                    background-color:#EE00FF;
+                    position:absolute;
+                    margin-left:210px;
+                    }
+                    #right{
+                    width:150px;
+                    height:100%;
+                    background-color:#EEFF00;
+                    position:absolute;
+                    margin-left:1134px;
+                    }  
+                  
+        </style>
+    </head>
+    <body>
+        
+        <div class="tou">
+            <div class="mingcheng"><h3><span style="color: blue;">銘萌lemon</span>网站(测试中)</h3></div>
+            <div class="log"><img src="https://assets.stickpng.com/thumbs/6129fa391f50df0004b7b9d8.png" alt="銘log" title="銘log" width="30px" height="30px"></div>
+            <div class="sousuo"><span>搜索功能(毫无卵用)--></span>
+                <input type="text" placeholder="没有卵用" class="sousuo-b">
+                <button class="sousuo-c">&#128269;</button> <!-- 搜索代码没有任何卵用 -->
+            </div>
+            <!-- <script>alert("由于代码不够完善，不兼容手机(错位)，建议网页(宽度800-1920)全屏")</script> -->
+            <div class="time">
+                <script>
+                    function getTime(){
+                    var date = new Date;
+                    var year = date.getFullYear(); //获取年份
+                    var month = date.getMonth() + 1;//获取月份
+                    var day = date.getDate(); //获取日期
+                    var hour = date.getHours(); //获取小时
+                    hour = hour < 10 ?'0' + hour : hour;
+                    var minute = date.getMinutes(); // 获取分
+                    minute = minute < 10 ?'0' + minute : minute;
+                    var seconds = date.getSeconds(); //获取秒
+                    seconds = seconds < 19 ?'0'+ seconds : seconds;
+                    return year +'年' + month +'月' + day +'日&nbsp;' + hour +':'+ minute +':' + seconds;
+                    }
+                    setInterval(function(){
+                        document.querySelector('.time').innerHTML=getTime()
+                    },1000)// 显示实时时间代码
+                </script>
+            </div>
+        </div>
+       
+            <div class="wangang">
+                <div style="clear: both;"></div><!-- 当前浮动元素后面补一个盒子，不设置宽高，clear: both -->
+                <div class="bianju1"></div>
+                <div class="gongneng" align="Center">
+                    <b style="color: dodgerblue; ">小小功能</b><br>
+                    <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzkzNDMwMDA3Ng==&mid=2247483928&idx=1&sn=679c84edf4fdd71e854eb75c57e4795b&chksm=c2be12dbf5c99bcd75158a276306cca148129ec6c9510b3cd7502af64a513ec4567b19e4d259&token=518934243&lang=zh_CN#rd">
+                        <b class="gn1">桌面幻灯片壁纸设置</b></a><br>
+                    <a target="_blank" target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzkzNDMwMDA3Ng==&mid=2247483895&idx=1&sn=27a0aac0d4bf4d4aa27753ded11a9cfd&chksm=c2be1134f5c99822300a96fb78029eefe0082fc3d7a5feabed21c320da6a303f2fc7335f9573&token=518934243&lang=zh_CN#rd">
+                        <b class="gn1">盘磁U盘变换图标</b></a><br>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1g841187g6/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=92828957df88448b68ba3289bbf74f54">
+                        <b class="gn1">网易云动态壁纸(看评论)</b></a><br>
+                    <a target="_blank" href="https://www.bilibili.com/video/BV1sb411Q76D/?spm_id_from=333.999.0.0&vd_source=92828957df88448b68ba3289bbf74f54">
+                        <b class="gn1">浏览器美化(看评论)</b></a><br>
+                    <br>
+                    <hr color="blue" size="2">
+                    <b style="color: dodgerblue;">音乐&nbsp;&nbsp;--&nbsp;&nbsp;音频</b>
+                    <hr color="blue" size="2">
+                    <a target="_blank" href="https://tool.liumingye.cn/music/?page=audioPage&type=migu&name=%E5%91%A8%E6%B7%B1#/">MyFreeMP3</a><br>
+                    <a target="_blank" href="https://www.tosound.com/">淘声toSound</a><br>
+                    <a target="_blank" href="https://www.free-stock-music.com/">Free.stock.music</a><br>
+                    <a target="_blank" href="https://www.jbsou.cn/">煎饼音乐(下载网)</a>
+                    <br><br>
+                    <hr color="red" size="1">
+                    <b style="color: red;">!网站代码不够完善!<br>!建议使用电脑!<br><b style="font-size: 20px; color: red;">!(宽度800-1920全屏)</b>!<br>不然会错位(不兼容手机)</b>
+                    <hr color="red" size="3">
+                    <b style="color: aquamarine;">有的网页丶软件丶功能不会用<br>那就去问本作者教你。<br>反正都熟，不要不好意思。</b>
+                    <!--  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2024026746&auto=1&height=66"></iframe><br>
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2020148971&auto=1&height=66"></iframe><br>
+                    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1379590554&auto=1&height=66"></iframe> -->
+                    <!-- 嵌入网易音乐代码(本地文件) audio也是-->
+                </div>
+             
+                <div class="bianju2"></div>  
+             
+             </div>   
+                <div class="NBJt"><!-- 中间跟右边的边距？照片墙 -->
+                    <img src="https://th.wallhaven.cc/small/qz/qzdqvr.jpg" alt="" >
+                    <img src="https://th.wallhaven.cc/small/ex/ex8lp8.jpg" alt="" >
+                    <img src="https://th.wallhaven.cc/small/we/we18r6.jpg" alt="" >
+                    <img src="https://th.wallhaven.cc/small/9d/9doexd.jpg" alt="" >
+                    <img src="https://th.wallhaven.cc/small/1p/1pqvk9.jpg" alt="" >
+                    <img src="https://th.wallhaven.cc/small/9d/9doqk8.jpg" alt="" width="150px">
+                </div>
+                <div class="wangzhang" align="center"> 
+                    <div style="clear: both;"></div><!-- 当前浮动元素后面补一个盒子，不设置宽高，clear: both -->
+                    <div class="yingshi">
+                        <b >影视</b><br>
+                        <a target="_blank" href="https://www.novipnoad.com" >NO视频</a>
+                        <img src="https://www.novipnoad.com/logo.png" alt="NO视频logo"  width="50px" height="20px"><br>
+                        <!--<span>影视有着1080p超高清视觉效果，同时字幕非常清晰，但是搜索功能非常乱。</span><br>-->
+                        <a target="_blank" href="https://www.cupfox.cc">茶杯狐</a>
+                        <img src="https://www.cupfox.cc/templets/tvdae/images/logo.png" alt="茶杯狐log" width="50px" height="20px"><br>
+                        <a target="_blank" href="https://www.1680s.net">80s电影</a>
+                        <img src="	https://www.1680s.net/template/1680s/asset/img/logo_golden.png" alt="80slog" width="50px" height="15px"><br>
+                        <a target="_blank" href="https://www.xiaobaiban.net/">茶杯狐2</a>
+                        <img src="	https://www.xiaobaiban.net/zuoz/img/logo.png" alt="80slog" width="50px" height="15px"><br>
+                        <a target="_blank" href="https://www.qnshu.com/">片库</a>
+                        <img src="	https://www.qnshu.com/template/pianku/image/logo.png" alt="80slog" width="50px" height="15px"><br>
+                        <a target="_blank" href="https://dmxq.me/">大米星球</a>
+                        <img src="	https://ugc.hitv.com/1/22101302355740A2E346E1415C87955C155B224B5Qzkx/lXQgtD0.png" alt="80slog" width="50px" height="15px"><br>
+                        <a target="_blank" href="http://agefans.top/" >AGE动漫官网</a><br>
+                        <!--<span>有着齐全动漫，而且有无删减片段，并且有多条视频线路，还有电视剧，电影等标签....</span><br>--> 
+                        <a target="_blank" href="https://www.yhdmp.net/">樱花动漫</a><br>
+                        <a target="_blank" href="http://bimiacg4.net/">M站</a><br>
+                        <!--网站出错，进不来--> 
+                        <a href=""><del>YY480电影</del></a>   <br>
+                        <a href=""><del>努努影院</del></a><br>
+                        <a href=""><del>白嫖者联盟</del></a><br>
+                    </div>
+                     <div class="Sucai">
+                        <b>壁纸&nbsp; 图片&nbsp; 素材</b><br>
+                        <a target="_blank" href="https://pixabay.com">PixBay</a><br><!-- target="_blank" 用新网页打开网站 -->
+                        <img src="http://www.w3.org/2000/svg" alt="">
+                        <a target="_blank" href="https://www.pexels.com/zh-cn/">Pexels</a><br>
+                        <img src="" alt="">
+                        <a target="_blank" href="https://mazwai.com/stock-video-footage">Free video clips</a>
+                        <img src="https://mazwai.com/assets/images/svg/logo.svg" alt="" height="20px"><br>
+                        <a target="_blank" target="_blank" href="https://www.dongtu.com">动图宇宙</a>
+                        <img src="https://www.dongtu.com/_nuxt/img/e38998c.png" alt="动图宇宙log" width="50px" height="20px"><br>
+                        <a target="_blank" href="https://www.soogif.com">SOOGIF</a>
+                        <img src="https://www.soogif.com/images/img/img-home-page/logo.png" alt="logo" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://pngimg.com">pngimg</a><br>
+                        <a target="_blank" target="_blank" href="http://www.stickpng.com/">StickPNG</a><br>
+                        <a target="_blank" href="https://unsplash.com/">Unsplash</a><br>
+                        <a target="_blank" href="https://wallhaven.cc/">Wallgaven</a>
+                        <img src="https://wallhaven.cc/images/layout/logo.png" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://www.flaticon.com/">Flaticon</a>
+                        <img src="https://media.flaticon.com/dist/min/img/logo/flaticon_negative.svg" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="http://iconpark.oceanengine.com/home">IconPark</a>
+                        <img src="	https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/static/media/logo_with_name.598fc011.svg" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://www.iconfinder.com/">ICONFINDER</a>
+                        <img src="https://www.iconfinder.com/static/img/logo/black.svg" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://www.cleanpng.com/">CleanPNG</a>
+                        <img src="	https://www.cleanpng.com/static/img/logo2.png" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://www.51yuansu.com/">觅元素</a><br>
+                        <a target="_blank" href="https://www.videvo.net/">videvo</a><br>
+                        <a target="_blank" href="https://www.iconfont.cn/">iconfont</a>
+                        <img src="	https://img.alicdn.com/imgextra/i2/O1CN01FF1t1g1Q3PDWpSm4b_!!6000000001920-55-tps-508-135.svg" alt="" width="50px" height="17px"><br>
+                        <a target="_blank" href="https://www.aigei.com/">爱给网</a>
+                        <img src="https://cdn-sqn.aigei.com/assets/site/img/logo/text/publish/logo-1_0.png" alt="" width="70px" height="15pox"><br>
+                        <a target="_blank" href="https://www.vilipix.com/">Vilipix</a>
+                        <img src="	https://vilipix.oss-cn-beijing.aliyuncs.com/web/logo/logo.png" alt="" width="70px" height="15pox"><br>
+                        <a target="_blank" href="https://pic.netbian.com/">彼岸图网</a><br>
+                        <a target="_blank" href="https://dimtown.com/">次元小镇</a>
+                        <img src="https://img01.dimtown.com/uploads/2022/05/20220506190018751.png" alt="次元小镇" width="70px" height="15px"><br>
+                        <a target="_blank" href="https://civitai.com/">Civitai</a><br>
+                        <a target="_blank" href="http://gracg.com/">涂鸦王国</a>
+                        <img src="https://qiniucssjs.gracg.com/imglogo2022/img-horizontal-white.png" alt="次元小镇" width="70px" height="15px"><br>
+                     </div>     
+                 </div>   
+                 <div class="Qita">
+                    <div class="Qitawang" align="center">
+                        <b style="color: dodgerblue; ">其他功能网站</b><br>
+                        <a target="_blank" href="https://zhutix.com/">致美化</a>
+                        <img src="https://dl.zhutix.net/2020/11/2021_x.png" alt="致美化" width="30px" height="15px"><br>
+                        <a target="_blank" href="https://www.lookae.com/">LOOK AE</a>
+                        <img src="https://www.lookae.com/wp-content/uploads/2019/03/home-logo.png" alt="LOOK AE" width="30px" height="15px"><br>
+                        <a target="_blank" href="http://www.ico51.cn/">ico透明图标</a>
+                        <img src="	http://www.ico51.cn/images/logo.png" alt="ico" width="30px" height="15px"><br>
+                        <a target="_blank" href="https://www.adoutu.com/index">爱斗图</a>
+                        <img src="	https://www.adoutu.com/common/img/logo-header.png" alt="爱斗图" width="30px" height="15px"><br>
+                        <a target="_blank" href="https://www.maoken.com/all-fonts">猫啃字体</a>
+                        <img src="	https://www.maoken.com/logo.png " alt="猫啃字体" width="30px" height="15px"><br>
+                        <a target="_blank" href="https://www.100font.com/">100font</a>
+                        <img src="	https://www.100font.com/tupian/banner.png " alt="100" width="20px" height="15px"><br>
+                        <a target="_blank" href="http://www.veleap.com/">VEleap</a>
+                        <img src="	http://ve-ows.oss-cn-shanghai.aliyuncs.com/img/veleap%20logo.svg " alt="VEleap" width="30px" height="15px"><br>
+                        <a target="_blank" href="https://winmoes.com/">枫&nbsp;主题社</a>
+                        <img src="	https://dl.winmoes.com/wp-content/uploads/2022/01/mainicon1.png " alt="枫主题社" width="35px" height="20px"><br>
+                        <a target="_blank" href="https://www.mvprpg.com/">天天RPG</a>
+                        <img src="	https://www.mvprpg.com/resources/images/RPG_logo.png" alt="天天RPG" width="35px" height="20px"><br>
+                        <a target="_blank" href="https://toonme.com/">TOONME</a><br>
+                        <a target="_blank" href="https://crypko.ai/cn/">Crypko</a>
+                        <img src="https://crypko.ai/images/logo-header.png" alt="Crypko" width="40px" height="10px"><br>
+                       <a target="_blank" href="https://tool.liumingye.cn/">刘明野的工具箱</a><br>
+                       <a target="_blank" href="https://note.acgyouxi.xyz/forum.php">ACG次元网</a>
+                       <img src="https://note.acgyouxi.xyz/template/acgi_ox0/images/logo.png" alt="ACG次元网" width="40px" height="10px"><br>
+                       <a target="_blank" href="https://www.acgdh.cc/">ACG导航网</a>
+                       <img src="	https://www.acgdh.cc/wp-content/uploads/2023/02/334.png" alt="ACG导航网" width="40px" height="10px"><br>
+                       <a target="_blank" href="https://github.com/">GitHub</a><br>  
+                    </div>
+                    <div class="gongneng2" align="center">
+                        <b style="color: dodgerblue; background-size: 30px;">软件</b><br>
+                        <a target="_blank" href="https://mp.weixin.qq.com/s/TGxgFTMGygJ2o_7Hf8CUlQ">PS2022</a>
+                        <img src="https://s1.aigei.com/src/img/png/b9/b93d8c79f3ee4e16baf362859975f458.png?imageMogr2/auto-orient/thumbnail/!240x240r/gravity/Center/crop/240x240/quality/85/&e=1735488000&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:kJo9ZRCwpHb0hNOsXbZVtGi9LO8=" alt="" height="20px" width="25px"><br>
+                        <a target="_blank" href="https://mp.weixin.qq.com/s/hXmDxjpsfNeIMq2cKREN8A">Ai2022</a>
+                        <img src="https://s1.chu0.com/src/img/png/a5/a51c6682f4e449fd85305ee2be0bc505.png?imageMogr2/auto-orient/thumbnail/!240x240r/gravity/Center/crop/240x240/quality/85/&e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:3XWO0AS7E0R4QjxdXCj-ds7-ksE=" alt="" width="25px" height="20px"><br>
+                        <a target="_blank" href="https://mp.weixin.qq.com/s/X9yEqMLwulYMc25dChONlQ">PR2022</a>
+                        <img src="https://s1.chu0.com/src/img/png/18/180f37f5c5dc48ca93e4a6618729d5f1.png?imageMogr2/auto-orient/thumbnail/!240x240r/gravity/Center/crop/240x240/quality/85/&e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:ysao4bMGxkChLG7XL6U9BNe3rqw=" alt="" width="25px" height="20px"><br>
+                        <a target="_blank" href="https://mp.weixin.qq.com/s/pY3d6dNP97b2Ui4g_fVXBQ">AE2022</a>
+                        <img src="https://s1.chu0.com/src/img/png/df/dfe899c028294bf196c91922a3335da8.png?imageMogr2/auto-orient/thumbnail/!240x240r/gravity/Center/crop/240x240/quality/85/&e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:8hKYKCCrzQivE0Ktq_7WDk0rKys=" alt="" width="25px" height="20px"><br>
+                        <a target="_blank" href="https://mp.weixin.qq.com/s/iDRjXGu3rVxXcaC_DqFCww">ID2022</a>
+                        <img src="https://s1.chu0.com/src/img/png/2a/2a9eabc1e9234d52af067930300d95ce.png?imageMogr2/auto-orient/thumbnail/!240x240r/gravity/Center/crop/240x240/quality/85/&e=1735488000&token=1srnZGLKZ0Aqlz6dk7yF4SkiYf4eP-YrEOdM1sob:w2WgNKQAUBsThgUzoMGPNOjy4oU=" alt="" width="25px" height="20px"><br>
+                       <a target="_blank" href="https://www.todesk.com/">ToDesk</a>
+                       <img src="https://www.todesk.com/dist/img/fd5f598.svg" alt="" width="35px" height="25px"><br>
+                       <a target="_blank" href="http://www.potplayercn.com/">PotPlayer</a><br>
+                       <a target="_blank" href="https://obsproject.com/zh-cn/download">OBS(直播/录屏)</a><br>
+                       <a target="_blank" href="https://www.filecxx.com/zh_CN/index.html">文件蜈蚣</a><br>
+                      
+                        <!-- <img src="" alt="" width="25px" height="20px"><br> -->
+                    </div>
+                 <!-- <embed src="https://music.163.com/song?id=1379590554&userid=5100898717" type="">  -->
+                    <!-- 扩展窗口函数 （网易音乐网址）-->
+             </div>
+            
+            <div style="clear: both;"></div>
+        <div class="wei" align="left">
+            <div class="WZ" style="padding-right: 15px;">
+                <img src="https://th.wallhaven.cc/small/qz/qzrk67.jpg" alt="" height="70px" width="120px" style="border: 2px solid #14a8c9; " >
+            </div>
+            <div class="WY">
+                <samp>技术Technology：Wed前端Wed frontend&nbsp;编辑Edit：Lemon(CN)&nbsp;策划Orchestrated：Lemon(CN)&nbsp;维护Maintenance：Teacher Chen(CN)</samp><br>
+                <samp>内容Elments：Teacher Chen(CN)&nbsp;单位Per unit：中山职业技术学院Zhongshan Vocational and Technical College</samp><br>
+                <samp>反馈邮箱Feedback email：<a href="https://mail.qq.com/">3447924568@qq.com</a>&nbsp;更新时间Update time：3.7-3.18&nbsp;感谢大家的支持</samp>
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="" width="25px" height="20px">
+                <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c521.png" alt="" width="25px" height="20px">
+                <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c51f.png" alt="" width="25px" height="25px">
+            </div>
+        </div>
+        <script src="./JS/彩色粒子/js.js"></script> 
+    </body>
+</html>
